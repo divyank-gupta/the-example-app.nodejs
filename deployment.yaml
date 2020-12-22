@@ -18,7 +18,7 @@ spec:
     spec:  
       containers:
       - name: node
-        image: nodeapp:1
+        image: divyankgupta/nodeapp:final
         ports:
         - containerPort: 3000
     
