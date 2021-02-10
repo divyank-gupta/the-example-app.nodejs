@@ -1,0 +1,27 @@
+Ques. Build a docker image of a node application. Take demo node app from github.
+Ans.
+
+1. git clone https://github.com/contentful/the-example-app.nodejs.git
+
+2. Try to run the app locally:
+	a) Open cmd -> npm install
+	b) npm run start:dev
+
+3. Try to run on docker:
+	a) Create a .dockerignore file which will ignore the node moules installed in the folder in docker build
+	b) Create a docker file
+	c) Run container
+
+Note: 
+
+If you are running on docker terminal, which basically runs a VM on host, when you run the container and host your app, your application will be available on VM(ip_address):host_port on web browser.
+You can also check this by curl VM(ip_address):host_port. It will give response.
+To get VM ip, type (docker-machine ip).
+
+But if you use docker desktop, you can view you app on web browser (localhost:host_port).
+
+4. Run on kubernetes
+	a) Add a deployment and a service.
+
+
+Docker image on docker hub: divyankgupta/nodeapp:final
